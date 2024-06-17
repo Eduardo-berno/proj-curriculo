@@ -1,0 +1,121 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url('../imagens/notebook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+}
+
+.container{
+    display: flex;
+    align-items:end;
+    text-align: center;
+    padding: 0 200px 100 100;
+    gap:400px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color:azure;
+
+} 
+
+h2 {
+    font-weight:400;
+    font-size: 14px;
+    padding: 0;
+    color:azure;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+span {
+    font-weight:bold;
+    color:azure;
+}
+
+dt {
+    font-weight: bold;
+}
+#linha-horizontal {
+    width: 1300px;
+    border: 1px solid #faf6f6;
+    align-items: center;
+}
+
+#imagem-eduardo{
+	/*Define altura do elemento*/
+	height: 120px;
+	width: auto;
+    padding: 0;
+
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 80px;   
+}
+
+.lista {
+    width: 810px;
+    height: 380px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.cartao {
+    opacity: 0;
+    font-size: 14px;
+    padding: 12px;
+    max-height: 350px;
+    /*Ajustar largura*/
+    max-width: 810px;
+    overflow-y: auto;
+    position: fixed;
+    /*Ajustar altura*/
+    top: 230px;
+    left: 270px;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.btn-seta {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #8351fe;
+}
+
+.descricao dl ul li {
+    margin-left: 20px;
+}
+
